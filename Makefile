@@ -1,9 +1,9 @@
 OBJ := $(patsubst %.c, %.o, $(wildcard *.c))
 
 # Build target
-Steganography: $(OBJ)
+Steganography.exe : $(OBJ)
 	gcc -o $@ $^
 
 # Clean build artifacts
 clean:
-	rm *.o
+	rm *.exe *.o
